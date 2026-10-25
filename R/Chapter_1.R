@@ -117,9 +117,26 @@ m_r <- function(data,r,c=0)
   return(val)
 }
 
+#' Pearson’s skewness coefficient 
+#' @description 
+#' Ap > 0 right or positive skew, Ap < 0 left or negative skew, Ap = 0 Symmetry
+#' @param data dataset
+#' @return ap Pearson's skewness coefficient
+#' @export
+Ap <- function(data)
+{
+  m <- mean(data)
+  mo <- my_mode(data)
+  sigma <- std_dev(data)
+  
+  res <- (m -mo)/sigma
+  return(res)
+}
+
+
 #' Fisher's skewness coefficient
 #' @description
-#' calculates fisher's skewness coefficient
+#' g1 > 0 right or positive skew, g1 < 0 left or negative skew, g1 = 0 Symmetric
 #' @param data dataset
 #' @return g1 fisher's skewness coefficient
 #' @export
@@ -133,7 +150,7 @@ g1 <- function(data)
 
 #'Fisher's Kurtosis coefficient
 #' @description
-#' Finds the kurtosis of a dataset
+#' g2 < 0 less peaked than normal (Playkurtic), g2 > 0 more peaked than normal (leptokurtic), g2 = 0 same peakness as normal (mesokurtic)
 #' @param data dataset
 #' @return g2
 #' @export

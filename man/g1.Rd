@@ -13,5 +13,5 @@ g1(data)
 g1 fisher's skewness coefficient
 }
 \description{
-calculates fisher's skewness coefficient
+g1 > 0 right or positive skew, g1 < 0 left or negative skew, g1 = 0 Symmetric
 }

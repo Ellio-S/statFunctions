@@ -13,5 +13,5 @@ g2(data)
 g2
 }
 \description{
-Finds the kurtosis of a dataset
+g2 < 0 less peaked than normal (Playkurtic), g2 > 0 more peaked than normal (leptokurtic), g2 = 0 same peakness as normal (mesokurtic)
 }

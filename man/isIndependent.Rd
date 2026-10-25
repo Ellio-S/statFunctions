@@ -4,14 +4,14 @@
 \alias{isIndependent}
 \title{Independence of X and Y}
 \usage{
-isIndependent(X, Y, freq_mat)
+isIndependent(freq_mat)
 }
 \arguments{
+\item{freq_mat}{relative frequency matrix of bivariate variable (X,Y)}
+
 \item{X}{independent variable}
 
 \item{Y}{dependent variable}
-
-\item{freq_mat}{relative frequency matrix of bivariate variable (X,Y)}
 }
 \value{
 Boolean TRUE or FALSE
