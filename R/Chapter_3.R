@@ -11,14 +11,14 @@ moving_average <- function(data,order)
   res <- c()
   if(order %% 2 == 1) #odd order
   {
-    res <- stat::filter(data, rep(1, times=order)/order)
+    res <- stats::filter(data, rep(1, times=order)/order)
   }
   else
   {
     vec <- c(0.5)
     vec <- append(vec,rep(1,times=order-1))
     vec <- append(vec,0.5)
-    res <- stat::filter(data,vec/order)
+    res <- stats::filter(data,vec/order)
   }
   return(res)
 }
