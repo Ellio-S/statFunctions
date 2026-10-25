@@ -2,9 +2,9 @@
 
 #' Moving Average
 #' @description Calculates moving average
-#' @param data dataset to be analised
+#' @param data dataset, recommended to be a time series object, or a vector
 #' @param order order of the moving average
-#' @return A vector of the moving averages
+#' @return A time series object
 #' @export
 moving_average <- function(data,order)
 {

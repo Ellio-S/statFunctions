@@ -7,12 +7,12 @@
 moving_average(data, order)
 }
 \arguments{
-\item{data}{dataset to be analised}
+\item{data}{dataset, recommended to be a time series object, or a vector}
 
 \item{order}{order of the moving average}
 }
 \value{
-A vector of the moving averages
+A time series object
 }
 \description{
 Calculates moving average
