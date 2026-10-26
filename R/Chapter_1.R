@@ -75,7 +75,21 @@ variance <- function(data)
 {
   val <- mean(data^2) - (mean(data)^2)
   return(val)
-} 
+}
+
+#' Standardised variable Z
+#' @description
+#' We use this new variable to compare datasets of different units
+#' @param X the dataset that we are going to standardise
+#' @return Z a new standardised dimesnionless variable in the form of a vector
+#' @export
+Z <- function(X)
+{
+  m <- mean(X)
+  dev <- std_dev(X)
+  Z <- (X - m)/dev
+  return(Z)
+}
 
 
 #' Pearson's coefficient of variation
