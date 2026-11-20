@@ -33,7 +33,7 @@ quasi_var <- function(X,n_i=NULL)
   {
     m <- mean(X)
     val <- sum((X-m)^2)/(length(X)-1)
-    ret <- sqrt(val) 
+    ret <- val
   }
   else
   {
