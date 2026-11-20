@@ -2,7 +2,7 @@
 % Please edit documentation in R/Chapter_1.R
 \name{variance}
 \alias{variance}
-\title{Variance of a dataset}
+\title{Population variance}
 \usage{
 variance(data)
 }

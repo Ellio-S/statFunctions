@@ -65,7 +65,7 @@ std_dev <- function(data)
 }
 
 
-#' Variance of a dataset
+#' Population variance
 #' @description
 #' Notation: V, sigma^2 - population variance, s_n^2 - sample variance, n is the sample size
 #' @param data dataset to be analised
