@@ -29,7 +29,7 @@ utility <- function(X,n_i)
 quasi_var <- function(X,n_i=NULL)
 {
   ret <- 0
-  if(isNULL(n_i))
+  if(is.null(n_i))
   {
     m <- mean(X)
     val <- sum((X-m)^2)/(length(X)-1)
@@ -42,3 +42,4 @@ quasi_var <- function(X,n_i=NULL)
   }
   return(ret)
 }
+
